@@ -1,0 +1,30 @@
+server:
+  port: 8080
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://rm-bp14274y920q56i9lo.mysql.rds.aliyuncs.com:3306/jcmap
+    username: juratest
+    password: Jura123456
+  jpa:
+    show-sql: true
+    properties:
+      hibernate:
+        ddl-auto: validate
+
+alipay:
+  appid: 2017032706423946
+  private_key: MIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCJVrsAvUwhd6hoiNxHzTrpTg16eWri9Mg+UvYxkdymiOiBoP7uJCCdh6geDofEQE1X+jbKEj8jj4lPTFbliLSCh2ZJ6m2KEYAp28hL9oJ5PaoKBAiX2fx/99FRsIHGJS8BnlFdRwhzDtGJpTxhfknKJ0mQtKs7NWwXtpHgvVEbwwOpk+8uNVUFnEOAERfsevTKILC0yYEl+bIaDAvtLRA9pvS1wtvp8K461NNAFJBiCbyhYFCqIuIZB5I3Fr7k0P4KDz012ETG7uS/uiHrstMxwdxeJcRyQxmNM04wS+grN5atqHPalC2k2ouKdNeAr9I16rEmDLvAJUd0iHH/J/JZAgMBAAECggEAYzybNUaTCx/GPXqfCPbfmZM/o/614DaVtosFv/2wnVkSABDQBE1wj8NlFArVyVXZTTfMfSjAHLbrtbPomkS0ghjKLaDJ89j/bb+UtGb0Eh0fj8soVmk5zVHJGyjaLM3TcGzwR+E61sCfYcFWpu+06/CFdJ1HmSnZ6CyQrf6967toDlHaL8KHRPKsXe/Sd+fD6Qtd3XWPuaj/Ld8Hx2swJwxVpbA/hawUZcSLnrUGVGVJT3p1KvoHcWTb5OMGan5Q2I0S6k1+mpnHDLNWe854wM4xeiaLULccvzdtUhD2jKfWYhbOj+QJ6QaUeqhO3xwpG4HTdXwNyc4gN7zbI48VzQKBgQC/5wMqJ9UUqRx9+iBCyEBdyEuYP2KkCIG8DhWjURMEg1WPl+9K3nxYkMDGRZGJ1yBQNVb3v4xdJ3SprFVBVwYqVah5+lPk9wsc9E/SjqiT3q5xnO5Kk3LqgaaZla+Sm3AI3LJzyQmmh+Iexamacfgzn4Y9sSeWgwFXkNDLjEHruwKBgQC3NiaznqiRJqwPoAHhfuLFUjkiNN5NaCdWVrRVUZ5OKn1EIQ3q5HrASuwyHGB0QpI0gP3Hy8XYq0tm5xW9rqKSfj1HsW4V/5RINJ/RPyPLAKw/chQYyddT9fOqMHqhSmWpj2QNNksJIcdxqk5GyTZjcUZ6/wwl6lOiRXDZSi9W+wKBgC5txeY9HOCSycHw8j02FdyayS9cppDpPfoxriqFQwSkgd7r84k5qvwCiaFu03d2BOti/FeUkHE5SpCCkV3toCA9+TUJy6Jp4tZuhaF7wm2EQtBaF40Tf4odNCGUhZYC5Wg/fS1mRl90INExIYesa1CSF/h1FA7mQzzcXKfil1BhAoGAbe9LZ8qTQY3f/vw3RLTbpCWDbPgmUHJn8FHUocF46VRrmB7xd/ojghEzC5qlcf2kN2cTYPjwPeQDObr9+7S3jom7gbKA6ShUNMOHBosJkj1UHjn4vysWTyYtUPkIDJJU0FrfYWIrwk4HnDfiAm2oeiE1doZmJrYl+yAJ6AiwwVMCgYAzwEQuwn6SbzGyUKIY2hzEIT1OVO8fYfTseV1DvYvz2i/GlVdQ60PZQRtyoD13sB8Mw4saEXz8BDcbuNQnFnr3SSqzdylTByW3LS90ks63rlbbWUjVonNQ/ui0pax8J+vrcvjR5NQFbA73FO1vJVMN8+cRcx091hDEkrWBMFcTwA==
+  public_key: MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAiVa7AL1MIXeoaIjcR8066U4Nenlq4vTIPlL2MZHcpojogaD+7iQgnYeoHg6HxEBNV/o2yhI/I4+JT0xW5Yi0godmSeptihGAKdvIS/aCeT2qCgQIl9n8f/fRUbCBxiUvAZ5RXUcIcw7RiaU8YX5JyidJkLSrOzVsF7aR4L1RG8MDqZPvLjVVBZxDgBEX7Hr0yiCwtMmBJfmyGgwL7S0QPab0tcLb6fCuOtTTQBSQYgm8oWBQqiLiGQeSNxa+5ND+Cg89NdhExu7kv7oh67LTMcHcXiXEckMZjTNOMEvoKzeWrahz2pQtpNqLinTXgK/SNeqxJgy7wCVHdIhx/yfyWQIDAQAB
+  notify_url: https://jcmap.jcbel.com/apis/pay/alipay/notify
+  return_url: https://jcmap.jcbel.com/apis/pay/alipay/return
+wxpay:
+  appid: wx100d268a6a1246e7
+  mchid: 1460124702
+  key: 4OCB2WXM7Y9OZA755K2OL8VBXUQBPS7F
+  notify_url: https://jcmap.jcbel.com/apis/pay/wxpay/notify
+pay:
+  callback_url: https://jcmap.jcbel.com/apis/orders/pay-callback
+logging:
+  level:
+    root: info

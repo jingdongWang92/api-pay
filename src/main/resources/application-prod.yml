@@ -1,0 +1,29 @@
+server:
+  port: 8080
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: ${MYSQL_URL}
+    username: ${MYSQL_USERNAME}
+    password: ${MYSQL_PASSWORD}
+  jpa:
+    show-sql: true
+    properties:
+      hibernate:
+        ddl-auto: none
+alipay:
+  appid: ${ALIPAY_APPID}
+  private_key: ${ALIPAY_PRIVATE_KEY}
+  public_key: ${ALIPAY_PUBLIC_KEY}
+  notify_url: ${ALIPAY_NOTIFY_URL}
+  return_url: ${ALIPEY_RETURN_URL}
+wxpay:
+  appid: ${WXPAY_APPID}
+  mchid: ${WXPAY_MCH_ID}
+  key: ${WXPAY_KEY}
+  notify_url: ${WXPAY_NOTIFY_URL}
+logging:
+  level:
+    root: info
+pay:
+  callback_url: ${PAY_CALLBACK_URL}
